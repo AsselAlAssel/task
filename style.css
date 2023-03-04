@@ -1,0 +1,149 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2em auto;
+}
+
+.view-modal {
+    width: 70%;
+    max-width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.view-modal.active {
+    display: block;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    background-color: #fff;
+    padding: 1em 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav--logo h1 {
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.nav--cartBtn {
+    background-color: #fff;
+    border: none;
+}
+
+.nav--cartBtn img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1em;
+}
+
+.product-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.product--img {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.product--img image {
+    width: 100%;
+}
+
+.product--box {
+    padding: 1.5em;
+}
+
+.product--info {
+    flex-direction: column;
+}
+
+.product--info h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.product--info p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+
+}
+
+.product--button .btn {
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.product--button .btn--add {
+    background-color: #000;
+    color: #FFF;
+    border: 1px solid #000;
+}
+
+.product--button .btn--add:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.product--button .btn--view {
+    background-color: #ffff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.product--button .btn--view:hover {
+    background-color: #000;
+    color: #fff;
+}
